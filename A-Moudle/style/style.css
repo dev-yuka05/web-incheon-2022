@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    height: 1000px;
+}
+.sns{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(0, 140, 255);
+}
+
+/* 콘텐츠 영역 */
+
+/* 공통 Class */
+.contents{
+    padding: 0 22%;
+}
+
+section{
+    padding: 100px 0;
+}
+
+section .tag{
+    color: rgb(54, 54, 54);
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+section .title{
+    color: rgb(27, 27, 27);
+    font-size: 48px;
+    margin: 0;
+}
+
+/* 2번 섹션 Class */
+#section2 .img{
+    text-align: center;
+}
+
+#section2 img{
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+#section2 {
+
+}
+
+/* 푸터 영역 */
+
+.footer{
+    text-align: center;
+}
+
+.footer p{
+    font-weight: 600;
+    padding-bottom: 50px;
+    color: #444;
+}
