@@ -16,39 +16,55 @@ body{
 
 /* 공통 Class */
 .contents{
-    padding: 0 22%;
+    padding: 0 17%;
 }
 
 section{
     padding: 100px 0;
 }
 
-section .tag{
-    color: rgb(54, 54, 54);
-    margin: 0;
-    font-size: 25px;
-    font-weight: 600;
+/* 1번 섹션 */
+#section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
 }
 
-section .title{
-    color: rgb(27, 27, 27);
-    font-size: 48px;
-    margin: 0;
+#section1 .text{
+    display: inline-block;
+    margin: auto 0;
 }
 
-/* 2번 섹션 Class */
-#section2 .img{
-    text-align: center;
+#section1 .title{
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
-#section2 img{
+#section1 .info{
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgb(155, 157, 159);
+}
+
+#section1 .btn{
+    padding: 10px 20px;
+    background-color: rgb(0, 140, 255);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#section1 .btn:hover{
+    background-color: rgb(0, 119, 255);
+}
+
+#section1 .img1{
     width: 100%;
     border-radius: 5px;
-
-}
-
-#section2 {
-
 }
 
 /* 푸터 영역 */
@@ -59,6 +75,7 @@ section .title{
 
 .footer p{
     font-weight: 600;
+    padding-top: 50px;
     padding-bottom: 50px;
     color: #444;
 }
