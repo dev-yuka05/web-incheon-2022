@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+
+/* 상단 타이틀 */
+.head{
+    background-color: rgb(1, 20, 48);
+    padding: 200px 20%;
+}
+
+.head h1{
+    font-size: 46px;
+    color: #fff;
+    margin: 0;
+}
+
+/* 이벤트 안내 */
+.guid{
+    padding: 200px 20%;
+    background-color: rgb(250, 250, 250);
+}
+
+.guid .title{
+    margin-top: 100px;
+}
+
+.guid p{
+    font-size: 22px;
+}
+
+/* 카드게임 */
+.card-game{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 60px;
+    padding: 150px 20%;
+}
+
+.game{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.card{
+    background-color: #ffffff;
+    width: 100%;
+    height: 150px;
+    border: solid 6.5px #008cff;
+    border-radius: 7px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
