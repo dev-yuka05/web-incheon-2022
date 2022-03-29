@@ -161,3 +161,30 @@ button:hover{
     text-align: right;
     width: 50%;
 }
+
+/* 출석체크 */
+.check{
+    margin-top: 100px;
+    display: grid;
+}
+.check ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 0;
+}
+.check ul li{
+    margin: 0 10px;
+    text-align: center;
+    font-size: 37px;
+    list-style: none;
+    padding: 17px;
+    border-radius: 5px;
+    line-height: 1;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.247);
+}
+.check ul li span{
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+}
