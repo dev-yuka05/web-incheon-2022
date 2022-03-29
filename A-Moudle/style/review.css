@@ -73,8 +73,18 @@ body{
     margin-top: 3px;
 }
 .review-item .review-text{
+    font-size: 17px;
+    color: #666;
+    margin-top: 2px;
+}
+.review-item .tag{
+    display: block;
+    color: #008cff;
     font-size: 18px;
-    color: #555;
+    margin-bottom: 5px;
+}
+.review-item .star{
+    margin-bottom: 10px;
 }
 /* 리뷰 쪽수 */
 .pagination{
