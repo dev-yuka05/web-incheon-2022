@@ -115,3 +115,49 @@ button:hover{
     gap: 20px;
     margin-top: 50px;
 }
+
+/* 카드게임 타이머 */
+.timer{
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.247);
+}
+.timer label{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+.timer input{
+    all: unset;
+    width: 50%;
+    display: block;
+    font-size: 20px;
+    border: none;
+    padding: 0;
+    text-align: right;
+}
+/*  카드게임 찾은 개수 카운트 */
+.collect{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    padding: 17px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.247);
+}
+.collect label{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+.collect input{
+    all: unset;
+    display: block;
+    font-size: 20px;
+    border: none;
+    padding: 0;
+    text-align: right;
+    width: 50%;
+}
