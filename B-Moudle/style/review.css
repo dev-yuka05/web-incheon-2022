@@ -5,13 +5,15 @@ body{
 /* 글쓰기 버튼 */
 .write{
     position: fixed;
-    right: 50px;
-    bottom: 50px;
+    right: 55px;
+    bottom: 55px;
     border-radius: 50px;
-    width: 55px;
-    height: 55px;
+    padding: 15px 23px;
     background-color: rgb(0, 140, 255);
     cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
 }
 
 
@@ -192,7 +194,7 @@ body{
 .modal-footer .star .count{
     font-size: 16px;
     color: #666;
-    margin-left: 5px;
+    margin-left: 2px;
     display: inline-block;
 }
 
@@ -207,4 +209,20 @@ body{
     font-size: 18px;
     display: inline-block;
     transition: background-color 0.3s;
+}
+
+.modal-footer .stars{
+    color: #888;
+    display: inline-block;
+}
+
+.modal-footer .stars #star{
+    color: #008cff;
+}
+
+.modal-footer .stars #star-half{
+    background: linear-gradient(90deg, #008cff 50%, #ffffff 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
