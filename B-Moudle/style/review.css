@@ -247,8 +247,22 @@ body{
     color: #888;
     display: inline-block;
 }
+.modal-footer .btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.modal-footer input{
+    resize: none;
+    font-size: 18px;
+    border: solid 1.5px rgb(207, 207, 207);
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    line-height: 1;
+    margin-right: 12px;
+}
 
-/* 평점 */
+/* 평점 별 */
 #star{
     color: #008cff;
 }
