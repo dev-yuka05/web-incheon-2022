@@ -2,14 +2,31 @@ body{
     margin: 0;
     font-family: "Malgun Gothic";
 }
+
+/* 오른쪽 아래 SNS 버튼 */
 .sns{
     position: fixed;
-    right: 50px;
     bottom: 50px;
+    right: 50px;
     border-radius: 50px;
+    background-color: rgb(0, 140, 255);
     width: 55px;
     height: 55px;
-    background-color: rgb(0, 140, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sns #snsBtn{
+    display: none;
+}
+
+.sns label[for="snsBtn"]{
+    display: block;
+    width: 35px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
 /* 콘텐츠 영역 */
@@ -72,8 +89,17 @@ section .btn:hover{
 }
 
 #section1 .img1{
-    width: 100%;
+    width: 520px;
     border-radius: 5px;
+}
+
+#section1 .img2{
+    border: solid 20px #fff;
+    width: 400px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 180px;
 }
 
 /* 섹션 2 : 이벤트 */

@@ -5,13 +5,15 @@ body{
 /* 글쓰기 버튼 */
 .write{
     position: fixed;
-    right: 50px;
-    bottom: 50px;
+    right: 55px;
+    bottom: 55px;
     border-radius: 50px;
-    width: 55px;
-    height: 55px;
+    padding: 15px 23px;
     background-color: rgb(0, 140, 255);
     cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
 }
 
 
@@ -98,6 +100,8 @@ body{
 }
 .review-item .star{
     margin-bottom: 10px;
+    color: #888;
+    font-size: 25px;
 }
 /* 리뷰 쪽수 */
 .pagination{
@@ -114,6 +118,7 @@ body{
     background-color: #f5f5f5;
     border-radius: 50px;
     margin: 0 5px;
+    user-select: none;
 }
 .pagination li.active{
     color: #fff;
@@ -144,7 +149,7 @@ body{
 
 .modal .modal-box{
     background-color: #fff;
-    margin: 100px 25%;
+    margin: 100px 23%;
     padding: 35px;
     border-radius: 8px;
 }
@@ -157,6 +162,30 @@ body{
 
 .modal .modal-header h1{
     margin: 0;
+}
+
+.modal-content .input{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.modal-content input{
+    margin-top: 10px;
+    resize: none;
+    font-size: 18px;
+    border: solid 1.5px rgb(207, 207, 207);
+    margin-bottom: 15px;
+    padding: 5%;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: border 0.5s;
+    width: 90%;
+    line-height: 1;
+}
+.modal-content input:focus{
+    outline: none;
+    border: solid 1.5px rgb(88, 88, 88);
 }
 
 .modal-content textarea{
@@ -186,13 +215,14 @@ body{
     margin: auto 0;
     font-size: 25px;
     line-height: 1;
+    
     user-select: none;
 }
 
 .modal-footer .star .count{
     font-size: 16px;
     color: #666;
-    margin-left: 5px;
+    margin-left: 2px;
     display: inline-block;
 }
 
@@ -207,4 +237,28 @@ body{
     font-size: 18px;
     display: inline-block;
     transition: background-color 0.3s;
+}
+
+.modal-footer button:hover{
+    background-color: rgb(0, 132, 255);
+}
+
+.modal-footer .stars{
+    color: #888;
+    display: inline-block;
+}
+
+/* 평점 */
+#star{
+    color: #008cff;
+}
+
+#star-half{
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(90deg, #008cff 50%, #888 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
 }
