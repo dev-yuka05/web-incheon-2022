@@ -8,6 +8,7 @@
 |https://goddino.tistory.com/130|B모듈 이벤트(카드 찾기 게임1)|
 |https://www.postman.com/|API|
 |https://binit.tistory.com/17|postman 사용법|
+|https://velog.io/@hsecode/%EB%B3%84%EC%A0%90-%EB%A7%8C%EB%93%A4%EA%B8%B0|B모듈 리뷰 페이지 모달 별점 만들기|
 
 ## 사용 프레임워크
 |이름|링크|
