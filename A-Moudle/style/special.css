@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+}
+
+.special{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 20%;
+}
+
+.special h1{
+    margin: auto 0;
+}
