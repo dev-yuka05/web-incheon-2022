@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+}
+
+/* 글쓰기 버튼 */
+.write{
+    position: fixed;
+    right: 55px;
+    bottom: 55px;
+    border-radius: 50px;
+    padding: 15px 23px;
+    background-color: rgb(0, 140, 255);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+/* 상단 타이틀 */
+.head{
+    background-color: rgb(1, 20, 48);
+    padding: 200px 20%;
+}
+.head h1{
+    font-size: 46px;
+    color: #fff;
+    margin: 0;
+}
+
+/* 이벤트 안내 */
+.guid{
+    padding: 200px 20%;
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+}
+
+.guid p{
+    color: #666;
+    font-size: 24px;
+}
+
+/* 구매 후기 */
+.review{
+    padding: 200px 20% 0;
+}
+.review-box{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 70px;
+}
+.review-item{
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.247);
+}
+.review-item .review-header{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.review-item img{
+    width: 100%;
+    border-radius: 5px;
+}
+.review-item .review-header .profile{
+    width: 50px;
+    height: 50px;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    text-align:center;
+    align-items:center;
+    display: grid;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+.review-item .review-header .name{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.review-item .review-header .time{
+    font-size: 12px;
+    color: #888;
+    margin-top: 3px;
+}
+.review-item .review-text{
+    font-size: 17px;
+    color: #666;
+    margin-top: 2px;
+}
+.review-item .tag{
+    display: block;
+    color: #008cff;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.review-item .star{
+    margin-bottom: 10px;
+    color: #888;
+    font-size: 25px;
+}
+/* 리뷰 쪽수 */
+.pagination{
+    display: flex;
+    list-style: none;
+    padding: 50px 0 150px 0;
+    text-align: center;
+    justify-content: center;
+}
+.pagination li{
+    display: block;
+    padding: 10px 16px;
+    color: #444444;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    margin: 0 5px;
+    user-select: none;
+}
+.pagination li.active{
+    color: #fff;
+    background-color: #008cff;
+}
+
+/* 모달 창 : 글 작성 폼 */
+.modal{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+}
+
+.modal .modal-close{
+    line-height:0.8;
+    font-size: 40px;
+    font-weight: bold;
+    color: #c9c9c9;
+    cursor: pointer;
+    user-select:none;
+}
+
+.modal .modal-box{
+    background-color: #fff;
+    margin: 100px 23%;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+.modal .modal-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.modal .modal-header h1{
+    margin: 0;
+}
+
+.modal-content .input{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.modal-content input{
+    margin-top: 10px;
+    resize: none;
+    font-size: 18px;
+    border: solid 1.5px rgb(207, 207, 207);
+    margin-bottom: 15px;
+    padding: 5%;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: border 0.5s;
+    width: 90%;
+    line-height: 1;
+}
+.modal-content input:focus{
+    outline: none;
+    border: solid 1.5px rgb(88, 88, 88);
+}
+
+.modal-content textarea{
+    display: block;
+    resize: none;
+    width: 95%;
+    height: 150px;
+    font-size: 18px;
+    border: solid 1.5px rgb(207, 207, 207);
+    padding: 2.5%;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: border 0.5s;
+}
+.modal-content textarea:focus{
+    outline: none;
+    border: solid 1.5px rgb(88, 88, 88);
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.modal-footer .star{
+    margin: auto 0;
+    font-size: 25px;
+    line-height: 1;
+    
+    user-select: none;
+}
+
+.modal-footer .star .count{
+    font-size: 16px;
+    color: #666;
+    margin-left: 2px;
+    display: inline-block;
+}
+
+.modal-footer button{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(0, 140, 255);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.modal-footer button:hover{
+    background-color: rgb(0, 132, 255);
+}
+
+.modal-footer .stars{
+    color: #888;
+    display: inline-block;
+}
+.modal-footer .btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.modal-footer input{
+    resize: none;
+    font-size: 18px;
+    border: solid 1.5px rgb(207, 207, 207);
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    line-height: 1;
+    margin-right: 12px;
+}
+
+/* 평점 별 */
+.starpoint_wrap{display:inline-block;}
+.starpoint_box{position:relative;background:url(https://hsecode.github.io/images_codepen/codepen_sp_star.png) 0 0 no-repeat;font-size:0;}
+.starpoint_box .starpoint_bg{display:block;position:absolute;top:0;left:0;height:18px;background:url(https://hsecode.github.io/images_codepen/codepen_sp_star.png) 0 -20px no-repeat;pointer-events:none;}
+.starpoint_box .label_star{display:inline-block;width:10px;height:18px;box-sizing:border-box;}
+.starpoint_box .star_radio{opacity:0;width:0;height:0;position:absolute;}
+.starpoint_box .star_radio:nth-of-type(1):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(1):checked ~ .starpoint_bg{width:10%;}
+.starpoint_box .star_radio:nth-of-type(2):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(2):checked ~ .starpoint_bg{width:20%;}
+.starpoint_box .star_radio:nth-of-type(3):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(3):checked ~ .starpoint_bg{width:30%;}
+.starpoint_box .star_radio:nth-of-type(4):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(4):checked ~ .starpoint_bg{width:40%;}
+.starpoint_box .star_radio:nth-of-type(5):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(5):checked ~ .starpoint_bg{width:50%;}
+.starpoint_box .star_radio:nth-of-type(6):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(6):checked ~ .starpoint_bg{width:60%;}
+.starpoint_box .star_radio:nth-of-type(7):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(7):checked ~ .starpoint_bg{width:70%;}
+.starpoint_box .star_radio:nth-of-type(8):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(8):checked ~ .starpoint_bg{width:80%;}
+.starpoint_box .star_radio:nth-of-type(9):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(9):checked ~ .starpoint_bg{width:90%;}
+.starpoint_box .star_radio:nth-of-type(10):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(10):checked ~ .starpoint_bg{width:100%;}
+
+.blind{position:absolute;clip:rect(0 0 0 0);margin:-1px;width:1px;height: 1px;overflow:hidden;}
