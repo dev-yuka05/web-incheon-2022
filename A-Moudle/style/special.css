@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: "Malgun Gothic";
 }
 
 .special{
@@ -8,6 +9,30 @@ body{
     padding: 120px 20%;
 }
 
-.special h1{
+.special .text{
     margin: auto 0;
+}
+.title{
+    font-size:48px;
+    background: linear-gradient(to right top, #5e23ff, #5689f8);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.copy{
+    color: #666;
+    margin: 0;
+    font-size: 13px;
+}
+
+.info{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+img{
+    width: 100%;
 }
