@@ -2,6 +2,11 @@ body{
     margin: 0;
 }
 
+/* 스크롤바 지우기 */
+*::-webkit-scrollbar{
+    display: none;
+}
+
 /* 글쓰기 버튼 */
 .write{
     position: fixed;
