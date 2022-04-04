@@ -3,35 +3,69 @@ body{
     font-family: "Malgun Gothic";
 }
 
-/* 스크롤바 지우기 */
 *::-webkit-scrollbar{
     display: none;
 }
 
 /* 오른쪽 아래 SNS 버튼 */
-.sns{
+
+.sns label[for="snsbtn"]{
     position: fixed;
     bottom: 45px;
     right: 45px;
     border-radius: 50px;
     background-color: rgb(0, 140, 255);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.sns #snsBtn{
+.sns input#snsbtn{
     display: none;
 }
 
-.sns label[for="snsBtn"]{
+.sns input#snsbtn + label span{
     display: block;
     width: 25px;
     height: 4px;
-    border-radius: 10px;
     background-color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.sns input#snsbtn:checked + label span:nth-of-type(1){
+    transform: rotate(45deg);
+}
+.sns input#snsbtn:checked + label span:nth-of-type(2){
+    transform: rotate(-45deg);
+}
+
+.sns input#snsbtn + label + .icon{
+    display: none;
+}
+
+.sns input#snsbtn:checked + label + .icon{
+    display: block;
+    position: fixed;
+    bottom: 90px;
+    right: 45px;
+}
+
+.sns .icon a{
+    background: url(../image/sns/SNS.png) no-repeat;
+    background-size: 190px;
+    width: 40px;
+    height: 45px;
+    display: block;
+}
+.sns .icon a:nth-of-type(2){
+    background-position-x: -102.5px;
+}
+.sns .icon a:nth-of-type(3){
+    background-position-x: -51px;
 }
 
 /* 콘텐츠 영역 */
