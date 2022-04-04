@@ -3,6 +3,11 @@ body{
     font-family: "Malgun Gothic";
 }
 
+/* 스크롤바 지우기 */
+*::-webkit-scrollbar{
+    display: none;
+}
+
 /* 오른쪽 아래 SNS 버튼 */
 .sns{
     position: fixed;
